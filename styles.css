@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    font-family: 'khmerBtb', sans-serif;
+}
+@font-face {
+    font-family: "khmerBtb";
+    src: url('./font/Khmer\ CN\ Battambang\ Regular.ttf');
 }
 :root {
   --primary-color: #0a9801;
@@ -10,6 +15,7 @@
   --white-color: #ffffff;
   --text-color: #1d1c1c;
   --gray-color: #f0f0f0;
+    --khmer-font: "khmerBtb", sans-serif;
 }
 body {
   background-color: var(--secondary-color);
