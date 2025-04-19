@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0a9801;
+  --secondary-color: #c3d6c7;
+  --red-color: #e12c13;
+  --white-color: #ffffff;
+  --text-color: #1d1c1c;
+  --gray-color: #f0f0f0;
+}
+body {
+  background-color: var(--secondary-color);
+}
+header {
+  color: var(--text-color);
+  padding: 10px 0;
+  font-size: 24px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  height: 80vh;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.day {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.event-list {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.event-list h3 {
+  color: var(--text-color);
+
+  margin-top: 10px;
+}
+.event-item {
+  background: white;
+  border-left: 4px solid blue;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.event-item .date {
+  font-weight: bold;
+  color: #333;
+  margin-right: 7px;
+}
+
+.event-item.red {
+  border-left-color: red;
+}
+
+.event-item.blue {
+  border-left-color: blue;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid rgb(232, 217, 217);
+}
+
+th,
+td {
+  height: 50px;
+  border: 1px solid gray;
+  text-align: center;
+  color: var(--text-color);
+  width: auto;
+}
+
+thead {
+  color: var(--white-color);
+  font-weight: bold;
+  border-radius: 10px;
+}
+thead th {
+  color: var(--white-color);
+  font-size: 18px;
+  background-color: var(--primary-color);
+}
+td:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+.prev-month,
+.next-month {
+  color: #999;
+  background-color: var(--gray-color);
+}
+
+.holiday {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.holiday-text {
+  font-size: 14px;
+  color: var(--red-color);
+}
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
