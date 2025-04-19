@@ -111,6 +111,12 @@ td {
     color: red;
   }
 
+#blue{
+    color: blue;
+  }
+#red{
+    color: red;
+  }
 
 thead {
   color: var(--white-color);
