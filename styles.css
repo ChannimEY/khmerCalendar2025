@@ -103,6 +103,14 @@ td {
   color: var(--text-color);
   width: auto;
 }
+.blue-text {
+    color: blue;
+  }
+
+  .red-text {
+    color: red;
+  }
+
 
 thead {
   color: var(--white-color);
@@ -123,15 +131,25 @@ td:hover {
   color: #999;
   background-color: var(--gray-color);
 }
-
-.holiday {
-  color: var(--red-color);
-  font-weight: bold;
+img {
+  width: 15px;
+  height: 20px;
+  margin-right: 5px;
 }
-
-.holiday-text {
-  font-size: 14px;
-  color: var(--red-color);
+.prev-month span,
+.container span{
+    display: block;
+}
+.date-number{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+.khmer-date {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-top: 5px;
 }
 footer {
   width: 100%;
